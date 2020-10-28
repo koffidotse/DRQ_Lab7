@@ -13,6 +13,13 @@ export class App extends React.Component {
   render() {
     return (
       <Router>
+        <div
+        style ={{
+          display:"flex",
+          justifyContent:"center",
+          alignItems:"center"
+        }}
+        >
         <div className="App">
           <Navbar bg="primary" variant="dark">
             <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -25,6 +32,7 @@ export class App extends React.Component {
           <Route path='/' component={Content} exact />
           <Route path='/create' component={Create} exact />
           <Route path='/read' component={Read} exact />
+        </div>
         </div>
       </Router>
     );
